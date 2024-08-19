@@ -22,22 +22,22 @@
 .hero-text {
   position: absolute;
   left: 10%;
-  width: 39%;
+  width: 40%;
 }
 
 .hero-text h1 {
-  font-size: 4rem; /* Responsive font size */
+  font-size: 4vw; /* Responsive font size */
   font-weight: 250;
   position: absolute;
   font-family: auto;
   left: 0;
-  top: 1rem;
-  letter-spacing: 0.5rem;
+  top: 5%;
+  letter-spacing: 0.5vw;
 }
 
 .hero-text p {
-  margin-top: 6.5rem;
-  font-size: 1.25rem; /* Responsive font size */
+  margin-top: 15%;
+  font-size: 1.25vw; /* Responsive font size */
   font-family: "Montserrat", sans-serif;
   font-weight: 550;
   padding: 3px 2px;
@@ -45,7 +45,7 @@
 
 .hero-placeholder .btn {
   margin-top: 2.5rem;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   box-shadow: 1px 1px 1px 1px rgba(60, 64, 67, 0.3);
@@ -59,8 +59,8 @@
   width: 40%;
   height: auto; /* Adjust height to be flexible */
   position: absolute;
-  right: 4%;
-  top: 8rem;
+  right: 5%;
+  top: 10%;
 }
 
 .content {
@@ -70,8 +70,8 @@
 }
 
 .content .content_heading, .content .content_heading_2, .content .content_heading_3, .content .content_heading_4 {
-  width: 90%;
-  max-width: 300px; /* Ensure content box size is manageable */
+  width: 80%;
+  max-width: 300px;
   border: 3px solid white;
   box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
   border-radius: 25px;
@@ -82,27 +82,27 @@
 }
 
 .content .content_heading {
-  top: 0%;
-  left: 5%;
+  top: 5%;
+  left: 10%;
 }
 
 .content .content_heading_2 {
-  top: 20%;
-  right: 5%;
+  top: 25%;
+  right: 10%;
 }
 
 .content .content_heading_3 {
-  top: 40%;
-  left: 5%;
+  top: 45%;
+  left: 10%;
 }
 
 .content .content_heading_4 {
-  top: 60%;
-  right: 5%;
+  top: 65%;
+  right: 10%;
 }
 
 .content h2 {
-  font-size: 1.5rem; /* Responsive font size */
+  font-size: 2vw; /* Responsive font size */
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
@@ -117,7 +117,7 @@
 .content h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 2.5rem; /* Responsive font size */
+  font-size: 2.5vw; /* Responsive font size */
   z-index: 3;
 }
 
@@ -136,21 +136,20 @@
   margin-bottom: 1.8rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 650;
-  font-size: 2.5rem; /* Responsive font size */
+  font-size: 2.5vw; /* Responsive font size */
 }
 
 .what-we-do-section p {
   margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
   font-weight: 550;
-  font-size: 1.25rem; /* Responsive font size */
+  font-size: 1.25vw; /* Responsive font size */
 }
 
 .steps {
-  display: block;
+  display: flex;
   justify-content: center;
   gap: 20px;
-  overflow: hidden;
   position: relative;
 }
 
@@ -170,21 +169,21 @@
   background-color: #f5f5f5;
   margin-top: 3.4rem;
   padding: 1rem;
-  width: 9.6rem;
-  height: 12.5rem;
+  width: 10vw;
+  height: 15vw;
   border-radius: 20px;
 }
 
 .index_2 {
   position: absolute;
   left: 75%;
-  top: 10%;
+  top: 15%;
 }
 
 .index_3 {
   position: absolute;
   left: 25%;
-  top: 40%;
+  top: 45%;
 }
 
 .dottedline1, .dottedline2 {
@@ -204,7 +203,7 @@
 
 .step-content {
   width: 90%;
-  max-width: 800px; /* Ensure content box size is manageable */
+  max-width: 800px;
   padding: 65px 90px;
   border-radius: 25px;
   box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
@@ -213,13 +212,13 @@
 
 #step_2 {
   width: 90%;
-  max-width: 800px; /* Ensure content box size is manageable */
+  max-width: 800px;
   padding: 85px 90px;
   transform: translateX(-10%) translateY(-10px);
 }
 
 .step h3 {
-  font-size: 4rem; /* Responsive font size */
+  font-size: 4vw; /* Responsive font size */
   font-family: "Montserrat", sans-serif;
   font-weight: 560;
   color: #cecece;
@@ -230,14 +229,14 @@
 
 .step-content h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem; /* Responsive font size */
+  font-size: 2.5vw; /* Responsive font size */
   font-weight: 650;
   margin-bottom: 10px;
 }
 
 .step-content p {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.125rem; /* Responsive font size */
+  font-size: 1.125vw; /* Responsive font size */
   font-weight: bold;
 }
 
@@ -253,7 +252,7 @@
   font-family: "Montserrat", sans-serif;
   border-radius: 10px;
   margin-right: 1.3rem;
-  font-size: 1.25rem; /* Responsive font size */
+  font-size: 1.25vw; /* Responsive font size */
 }
 
 .partners-section {
@@ -263,7 +262,7 @@
 }
 
 .partners-section h2 {
-  font-size: 2.5rem; /* Responsive font size */
+  font-size: 2.5vw; /* Responsive font size */
   margin-bottom: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: 650;
@@ -271,7 +270,7 @@
 
 .partners-logos img {
   margin: 40px 20px;
-  width: 15rem;
+  width: 15vw;
 }
 
 .last_section {
@@ -281,19 +280,19 @@
 }
 
 .last_section h2 {
-  font-size: 2.5rem; /* Responsive font size */
+  font-size: 2.5vw; /* Responsive font size */
   margin-bottom: 2rem;
 }
 
 .company_desc p {
-  font-size: 1.25rem; /* Responsive font size */
+  font-size: 1.25vw; /* Responsive font size */
   font-family: "Montserrat", sans-serif;
   font-weight: 550;
   margin: 1rem 2rem;
 }
 
 .company_desc a {
-  font-size: 1.25rem; /* Responsive font size */
+  font-size: 1.25vw; /* Responsive font size */
   text-decoration: none;
   color: white;
   border: 1px solid #fff;
@@ -304,34 +303,41 @@
 
 /* Media Queries */
 @media (max-width: 1200px) {
+  .hero-text {
+    width: 50%;
+    left: 20%;
+  }
+
   .hero-text h1 {
-    font-size: 3.5rem;
-    top: 1rem;
+    font-size: 3rem; /* Adjust for medium screens */
+    top: 0.5rem;
   }
 
   .hero-text p {
-    font-size: 1.1rem;
+    font-size: 1.125rem; /* Adjust for medium screens */
+  }
+
+  .hero-placeholder img {
+    width: 60%;
+    right: 15%;
+    top: 5%;
   }
 
   .content .content_heading, .content .content_heading_2, .content .content_heading_3, .content .content_heading_4 {
-    width: 80%;
-    padding: 15px 5px;
+    width: 85%;
+    padding: 15px;
   }
 
-  .step {
-    flex-direction: column;
-  }
-
-  .index_2, .index_3 {
-    position: static;
-    transform: none;
+  .index_1, .index_2, .index_3 {
+    width: 8rem;
+    height: 10rem;
   }
 }
 
 @media (max-width: 768px) {
   .hero-text h1 {
     font-size: 2.5rem;
-    top: 0.5rem;
+    top: 1rem;
   }
 
   .hero-text p {
@@ -346,16 +352,12 @@
 
   .content .content_heading, .content .content_heading_2, .content .content_heading_3, .content .content_heading_4 {
     width: 90%;
-    padding: 10px 5px;
+    padding: 10px;
   }
 
   .index_1, .index_2, .index_3 {
-    width: 8rem;
-    height: 10rem;
-  }
-
-  .dottedline1, .dottedline2 {
-    display: none;
+    width: 7rem;
+    height: 9rem;
   }
 
   .partners-logos img {
