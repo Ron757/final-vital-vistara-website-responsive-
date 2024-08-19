@@ -14,7 +14,8 @@
   display: grid;
   position: relative;
   background-color: white;
-  height: 510px;
+  height: auto; /* Adjust height to be flexible */
+  padding-bottom: 50px; /* Ensure enough space for content */
   margin-bottom: 20px;
 }
 
@@ -25,18 +26,18 @@
 }
 
 .hero-text h1 {
-  font-size: 60px;
+  font-size: 4rem; /* Responsive font size */
   font-weight: 250;
   position: absolute;
   font-family: auto;
-  left: 0rem;
-  top: 1.3rem;
+  left: 0;
+  top: 1rem;
   letter-spacing: 0.5rem;
 }
 
 .hero-text p {
   margin-top: 6.5rem;
-  font-size: 20px;
+  font-size: 1.25rem; /* Responsive font size */
   font-family: "Montserrat", sans-serif;
   font-weight: 550;
   padding: 3px 2px;
@@ -56,7 +57,7 @@
 
 .hero-placeholder img {
   width: 40%;
-  height: 467px;
+  height: auto; /* Adjust height to be flexible */
   position: absolute;
   right: 4%;
   top: 8rem;
@@ -68,84 +69,65 @@
   top: 0.2rem;
 }
 
-.content .content_heading {
-  width: 30%;
+.content .content_heading, .content .content_heading_2, .content .content_heading_3, .content .content_heading_4 {
+  width: 90%;
+  max-width: 300px; /* Ensure content box size is manageable */
   border: 3px solid white;
   box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
   border-radius: 25px;
   display: flex;
   z-index: 0;
-  padding: 20px 1px;
+  padding: 20px 10px;
   position: absolute;
-  top: -7%;
-  left: 4%;
+}
+
+.content .content_heading {
+  top: 0%;
+  left: 5%;
 }
 
 .content .content_heading_2 {
-  width: 30%;
-  border: 3px solid white;
-  box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
-  border-radius: 25px;
-  z-index: 0;
-  padding: 20px 4px;
-  position: absolute;
-  top: 5%;
-  right: 6%;
+  top: 20%;
+  right: 5%;
 }
 
 .content .content_heading_3 {
-  width: 30%;
-  border: 3px solid white;
-  box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
-  border-radius: 25px;
-  z-index: 0;
-  padding: 20px 4px;
-  position: absolute;
-  top: 37%;
-  left: 4%;
+  top: 40%;
+  left: 5%;
 }
 
 .content .content_heading_4 {
-  width: 30%;
-  border: 3px solid white;
-  box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
-  border-radius: 25px;
-  z-index: 0;
-  padding: 20px 5px;
-  position: absolute;
-  top: 43%;
-  right: 6%;
+  top: 60%;
+  right: 5%;
 }
 
 .content h2 {
-  font-size: 25px;
+  font-size: 1.5rem; /* Responsive font size */
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
 
 .faq {
   position: relative;
-  top: -6rem;
-  width: 45%;
-  margin: 5px 10px;
+  width: 90%;
+  margin: 5px auto;
   z-index: 2;
 }
 
 .content h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 2.5rem; /* Responsive font size */
   z-index: 3;
 }
 
 .logos img {
-  width: 7.3%;
-  margin: 50px 75px;
+  width: 10%; /* Adjust width to be responsive */
+  margin: 50px 30px;
 }
 
 .what-we-do-section {
   position: relative;
-  top: 0.2rem;
   padding: 10px 20px;
   text-align: center;
 }
@@ -154,14 +136,14 @@
   margin-bottom: 1.8rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 650;
-  font-size: 45px;
+  font-size: 2.5rem; /* Responsive font size */
 }
 
 .what-we-do-section p {
   margin-bottom: 30px;
   font-family: "Montserrat", sans-serif;
   font-weight: 550;
-  font-size: 20px;
+  font-size: 1.25rem; /* Responsive font size */
 }
 
 .steps {
@@ -169,13 +151,15 @@
   justify-content: center;
   gap: 20px;
   overflow: hidden;
+  position: relative;
 }
 
 .step {
   background-color: #fff;
   display: flex;
   gap: 30px;
-  margin-left: 8rem;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 8px;
   padding: 45px;
   text-align: left;
@@ -192,45 +176,50 @@
 }
 
 .index_2 {
-  left: 79.3%;
-  top: -0.6rem;
-  position: relative;
+  position: absolute;
+  left: 75%;
+  top: 10%;
 }
 
 .index_3 {
-  left: -0.6%;
-  position: relative;
-  top: -0.6rem;
+  position: absolute;
+  left: 25%;
+  top: 40%;
+}
+
+.dottedline1, .dottedline2 {
+  position: absolute;
+  width: 100%;
+  top: 60%;
+  left: 0;
 }
 
 .dottedline1 {
-  position: relative;
-  top: 3.8rem;
-  left: 60%;
   transform: scaleY(1.1);
 }
 
 .dottedline2 {
-  position: relative;
-  display: inline-flex;
-  transform: scaleX(-1) scaleY(1.4) translateX(800px) translateY(66px);
+  transform: scaleX(-1) scaleY(1.4) translateX(100%);
 }
 
 .step-content {
-  width: 74%;
+  width: 90%;
+  max-width: 800px; /* Ensure content box size is manageable */
   padding: 65px 90px;
   border-radius: 25px;
   box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
+  margin: 0 auto;
 }
 
 #step_2 {
-  width: 74%;
+  width: 90%;
+  max-width: 800px; /* Ensure content box size is manageable */
   padding: 85px 90px;
-  transform: translateX(-150px) translateY(-10px);
+  transform: translateX(-10%) translateY(-10px);
 }
 
 .step h3 {
-  font-size: 90px;
+  font-size: 4rem; /* Responsive font size */
   font-family: "Montserrat", sans-serif;
   font-weight: 560;
   color: #cecece;
@@ -241,20 +230,15 @@
 
 .step-content h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 35px;
+  font-size: 2.5rem; /* Responsive font size */
   font-weight: 650;
   margin-bottom: 10px;
 }
 
 .step-content p {
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem; /* Responsive font size */
   font-weight: bold;
-}
-
-#step_3 {
-  width: 74%;
-  padding: 80px 90px;
 }
 
 .tags {
@@ -269,26 +253,25 @@
   font-family: "Montserrat", sans-serif;
   border-radius: 10px;
   margin-right: 1.3rem;
-  font-size: 20px;
+  font-size: 1.25rem; /* Responsive font size */
 }
 
 .partners-section {
   position: relative;
-  top: 2rem;
   text-align: center;
   padding: 40px 20px;
 }
 
 .partners-section h2 {
-  font-size: 40px;
+  font-size: 2.5rem; /* Responsive font size */
   margin-bottom: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: 650;
 }
 
 .partners-logos img {
-  margin: 40px 80px;
-  width: 23rem;
+  margin: 40px 20px;
+  width: 15rem;
 }
 
 .last_section {
@@ -298,23 +281,123 @@
 }
 
 .last_section h2 {
-  font-size: 40px;
+  font-size: 2.5rem; /* Responsive font size */
   margin-bottom: 2rem;
 }
 
 .company_desc p {
-  font-size: 20px;
+  font-size: 1.25rem; /* Responsive font size */
   font-family: "Montserrat", sans-serif;
   font-weight: 550;
   margin: 1rem 2rem;
 }
 
 .company_desc a {
-  font-size: 22px;
+  font-size: 1.25rem; /* Responsive font size */
   text-decoration: none;
   color: white;
   border: 1px solid #fff;
   padding: 10px 15px;
   border-radius: 5px;
   background: #007BFF;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .hero-text h1 {
+    font-size: 3.5rem;
+    top: 1rem;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+
+  .content .content_heading, .content .content_heading_2, .content .content_heading_3, .content .content_heading_4 {
+    width: 80%;
+    padding: 15px 5px;
+  }
+
+  .step {
+    flex-direction: column;
+  }
+
+  .index_2, .index_3 {
+    position: static;
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+    top: 0.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-placeholder img {
+    width: 50%;
+    right: 10%;
+    top: 4rem;
+  }
+
+  .content .content_heading, .content .content_heading_2, .content .content_heading_3, .content .content_heading_4 {
+    width: 90%;
+    padding: 10px 5px;
+  }
+
+  .index_1, .index_2, .index_3 {
+    width: 8rem;
+    height: 10rem;
+  }
+
+  .dottedline1, .dottedline2 {
+    display: none;
+  }
+
+  .partners-logos img {
+    width: 12rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2rem;
+    top: 0;
+  }
+
+  .hero-text p {
+    font-size: 0.875rem;
+  }
+
+  .hero-placeholder img {
+    width: 60%;
+    right: 0;
+    top: 2rem;
+  }
+
+  .content .content_heading, .content .content_heading_2, .content .content_heading_3, .content .content_heading_4 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .index_1, .index_2, .index_3 {
+    width: 6rem;
+    height: 8rem;
+  }
+
+  .partners-logos img {
+    width: 10rem;
+  }
+
+  .company_desc p {
+    font-size: 1rem;
+  }
+
+  .company_desc a {
+    font-size: 1rem;
+  }
 }
