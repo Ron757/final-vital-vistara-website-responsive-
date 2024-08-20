@@ -2,29 +2,27 @@
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-  }
-  
-  .hero-section {
+}
+
+.hero-section {
     text-align: center;
     padding: 40px 20px;
-  }
-  
-  .hero-placeholder {
+}
+
+.hero-placeholder {
     background-color: white;
     height: 510px;
     margin-bottom: 20px;
     display: grid;
-   
-    /* text-align: center; */
-    
-  }
-  .hero-placeholder .hero-text{
+}
+
+.hero-placeholder .hero-text {
     position: absolute;
-   
     left: 10%;
-    width:39%;
-  }
-  .hero-placeholder .hero-text h1{
+    width: 39%;
+}
+
+.hero-placeholder .hero-text h1 {
     font-size: 60px;
     font-family: auto;
     position: absolute;
@@ -32,220 +30,204 @@
     left: 0rem;
     top: 1.3rem;
     letter-spacing: 0.5rem;
-  }
-  .hero-placeholder .hero-text p{
+}
+
+.hero-placeholder .hero-text p {
     margin-top: 6.5rem;
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
     font-weight: 550;
     padding: 3px 2px;
-  }
-  .hero-placeholder .btn{
+}
+
+.hero-placeholder .btn {
     margin-top: 2.5rem;
-    /* margin-left: 22%; */
     font-size: 1.2rem;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    box-shadow: 1px 1px 1px 1px rgba(60,64,67,0.3) ;
-  }
-  .hero-placeholder .btn:hover{
-    box-shadow: 8px 6px 8px 6px rgba(60,64,67,0.3) , 8px 6px 8px 6px rgba(60,64,67,0.15);
-    /* background-color: transparent; */
-  }
-  .hero-placeholder img{
+    box-shadow: 1px 1px 1px 1px rgba(60, 64, 67, 0.3);
+}
+
+.hero-placeholder .btn:hover {
+    box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
+}
+
+.hero-placeholder img {
     width: 40%;
     height: 467px;
     position: absolute;
-    right:4%;
-    top:8rem;
-  }
-  
-  .content{
+    right: 4%;
+    top: 8rem;
+}
+
+.content {
     text-align: center;
     position: relative;
-    top: 0.2rem; 
+    top: 0.2rem;
+}
 
-  }
-  .content .content_heading{
+.content .content_heading {
     width: 30%;
     border: 3px solid white;
-    box-shadow: 8px 6px 8px 6px rgba(60,64,67,0.3) , 8px 6px 8px 6px rgba(60,64,67,0.15);
+    box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
     border-radius: 25px;
     display: flex;
     z-index: 0;
     padding: 20px 1px;
-    position: absolute; 
+    position: absolute;
     top: -7%;
     left: 4%;
-  }
-  .content .content_heading_2{
+}
+
+.content .content_heading_2 {
     width: 30%;
     border: 3px solid white;
-    box-shadow: 8px 6px 8px 6px rgba(60,64,67,0.3) , 8px 6px 8px 6px rgba(60,64,67,0.15);
+    box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
     border-radius: 25px;
     z-index: 0;
     padding: 20px 4px;
-    /* margin-left: 5.5rem;   */
-    /* transform: translateX(50rem); */
     position: absolute;
     top: 5%;
-    right: 6%; 
-  }
-  .content .content_heading_3{
+    right: 6%;
+}
+
+.content .content_heading_3 {
     width: 30%;
     border: 3px solid white;
-    box-shadow: 8px 6px 8px 6px rgba(60,64,67,0.3) , 8px 6px 8px 6px rgba(60,64,67,0.15);
+    box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
     border-radius: 25px;
     z-index: 0;
     padding: 20px 4px;
-    /* margin-left: 5.5rem;   */
-    /* transform: translateX(50rem); */
     position: absolute;
     top: 37%;
     left: 4%;
-  
-  }
-  .content .content_heading_4{
+}
+
+.content .content_heading_4 {
     width: 30%;
     border: 3px solid white;
-    box-shadow: 8px 6px 8px 6px rgba(60,64,67,0.3) , 8px 6px 8px 6px rgba(60,64,67,0.15);
+    box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
     border-radius: 25px;
     z-index: 0;
     padding: 20px 5px;
-    /* margin-left: 5.5rem;   */
-    /* transform: translateX(50rem); */
     position: absolute;
     top: 43%;
     right: 6%;
-  
-  }
- 
-  
-  .content h2{
+}
+
+.content h2 {
     font-size: 25px;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
-    
-  }
-  .faq{
-    position: relative; 
-    /* margin-top: auto; */
-    top:-6rem; 
-    /* transform: translateY(-30rem) translateX(2rem); */
+}
+
+.faq {
+    position: relative;
+    top: -6rem;
     width: 45%;
     margin: 5px 10px;
     z-index: 2;
-  }
-  
-  .content h1 {
-    
+}
+
+.content h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 40px;
     z-index: 3;
-    
-    
-  }
-  
- 
-  .logos img {
-    /* margin: 0 25px; */
+}
+
+.logos img {
     width: 7.3%;
-    /* height: 50px; */
     margin: 50px 75px;
-  }
-  
-  .what-we-do-section {
-    /* background-color: #f5f5f5; */
+}
+
+.what-we-do-section {
     position: relative;
-    top:0.2rem;
-    
+    top: 0.2rem;
     padding: 10px 20px;
     text-align: center;
-    
-  }
-  
-  .what-we-do-section h2 {
-    
+}
+
+.what-we-do-section h2 {
     margin-bottom: 1.8rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 650;
     font-size: 45px;
+}
 
-  }
-  
-  .what-we-do-section p {
+.what-we-do-section p {
     margin-bottom: 30px;
     font-family: "Montserrat", sans-serif;
     font-weight: 550;
     font-size: 20px;
-  }
-  
-  .steps {
+}
+
+.steps {
     display: block;
     justify-content: center;
     gap: 20px;
     overflow: hidden;
-  }
-  
-  .step {
+}
+
+.step {
     background-color: #fff;
-    /* border: 1px solid #ddd; */
     display: flex;
     gap: 30px;
     margin-left: 8rem;
     border-radius: 8px;
     padding: 45px;
-    /* width: 200px; */
     text-align: left;
-  }
-  .index_1,.index_2,.index_3{
+}
+
+.index_1, .index_2, .index_3 {
     border: 5px solid #f5f5f5;
     background-color: #f5f5f5;
     margin-top: 3.4rem;
     padding: 1rem;
-    /* top: 1rem; */
     width: 9.6rem;
     height: 12.5rem;
     border-radius: 20px;
-  }
-  
-  .index_2{
+}
+
+.index_2 {
     left: 79.3%;
     top: -0.6rem;
     position: relative;
-  }
-  .index_3{
+}
+
+.index_3 {
     left: -0.6%;
     position: relative;
     top: -0.6rem;
-  }
-  .dottedline1{
+}
+
+.dottedline1 {
     position: relative;
     top: 3.8rem;
-    left:60%;
+    left: 60%;
     transform: scaleY(1.1);
-  }
-  .dottedline2{
+}
+
+.dottedline2 {
     position: relative;
     display: inline-flex;
     transform: scaleX(-1) scaleY(1.4) translateX(800px) translateY(66px);
-  }
-  .step-content{
+}
+
+.step-content {
     width: 74%;
     padding: 65px 90px;
     border-radius: 25px;
-    box-shadow: 8px 6px 8px 6px rgba(60,64,67,0.3) , 8px 6px 8px 6px rgba(60,64,67,0.15);
-  }
-  #step_2{
-    /* padding: 20px 60px ; */
+    box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
+}
+
+#step_2 {
     width: 74%;
     padding: 85px 90px;
-    
     transform: translateX(-150px) translateY(-10px);
-    
-  }
-  .step h3 {
+}
+
+.step h3 {
     font-size: 90px;
     font-family: "Montserrat", sans-serif;
     font-weight: 560;
@@ -253,30 +235,31 @@
     padding-top: 0.5rem;
     margin: 0.3rem;
     text-align: center;
-  }
-  
-  .step-content h2 {
+}
+
+.step-content h2 {
     font-family: "Montserrat", sans-serif;
     font-size: 35px;
     font-weight: 650;
     margin-bottom: 10px;
-  }
-  
-  .step-content p {
+}
+
+.step-content p {
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: bold;
-  }
-  
-  #step_3{
+}
+
+#step_3 {
     width: 74%;
     padding: 80px 90px;
-  }
-  .tags {
+}
+
+.tags {
     margin-top: 10px;
-  }
-  
-  .tags span {
+}
+
+.tags span {
     display: inline-block;
     background-color: #007BFF;
     color: #fff;
@@ -285,127 +268,190 @@
     border-radius: 10px;
     margin-right: 1.3rem;
     font-size: 20px;
-  }
-  
-  .partners-section {
+}
+
+.partners-section {
     position: relative;
-    top:2rem;
+    top: 2rem;
     text-align: center;
     padding: 40px 20px;
-  }
-  
-  .partners-section h2 {
+}
+
+.partners-section h2 {
     font-size: 40px;
     margin-bottom: 20px;
     font-family: "Montserrat", sans-serif;
     font-weight: 650;
-  }
-  
-  .partners-logos img {
+}
+
+.partners-logos img {
     margin: 40px 80px;
     width: 23rem;
-    /* height: 50px; */
-  }
-  
-  .last_section {
-    /* background-color: #000; */
+}
+
+.last_section {
     color: #fff;
     text-align: center;
     padding: 15px;
-    
-  }
+}
 
-  .last_section h2{
+.last_section h2 {
     font-size: 40px;
     margin-bottom: 2rem;
-  }
-  .company_desc p{
+}
+
+.company_desc p {
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
-    font-weight: 650; 
+    font-weight: 650;
+}
 
-  }
-  .company_desc h4{
+.company_desc h4 {
     margin-top: -5rem;
     margin-left: 43%;
     width: 20%;
     margin-bottom: 6rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 28px;
-    border: 3px solid whitesmoke;
-    border-radius: 10px;
-    padding: 1rem;
-    box-shadow: 2px 3px 2px 3px rgba(60,64,67,0.3) , 2px 3px 2px 3px rgba(60,64,67,0.15); 
-  }
+    font-size: 20px;
+    padding: 30px;
+    border-radius: 50px;
+    background-color: #007BFF;
+}
 
-  .image_desc{
-    width: 43%;
-    top: 3rem;
-    position: relative;
-    left: 10%;
-    z-index: 0;
-  }
-  
+.company_desc .hero-text {
+    position: absolute;
+    left: 0%;
+    width: 29%;
+}
 
-  .desc{
-    width: 37%;
-    position: relative;
-    top: -13.5rem;
-    left: 50%;
-    z-index: 1;
-    
-  }
-  .desc p{
-    font-size: 16.4px;
+.company_desc .hero-text h1 {
+    font-size: 50px;
+    font-family: auto;
+    position: absolute;
+    font-weight: 450;
+    left: 3rem;
+    top: 1.8rem;
+}
+
+.company_desc .hero-text p {
+    margin-top: 10rem;
+    font-size: 20px;
     font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    text-align: initial;
-    margin: 6px 0;
-    color: black;
-  }
-  
-  
-  
-  @media (max-width: 768px) {
-    .content .content_heading {
-      width: 30%;
-      margin-left: 7rem;
+    font-weight: 650;
+    padding: 3px 2px;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-placeholder .hero-text h1 {
+        font-size: 40px;
+        left: 0rem;
+        top: 1rem;
     }
-  
-    .logos img {
-      width: 7.3%;
-      margin: 50px 75px;
+    .hero-placeholder .hero-text p {
+        font-size: 18px;
+        margin-top: 5rem;
     }
-  
+    .hero-placeholder img {
+        width: 60%;
+        height: auto;
+        right: 2%;
+        top: 5rem;
+    }
+    .content .content_heading, 
+    .content .content_heading_2, 
+    .content .content_heading_3, 
+    .content .content_heading_4 {
+        width: 40%;
+        top: -5%;
+    }
     .step {
-      display: flex;
-      gap: 30px;
-      width: 80%;
+        flex-direction: column;
+        margin-left: 0;
+        padding: 20px;
     }
-  
-    .index_1,
-    .index_2,
-    .index_3 {
-      width: 72px;
-      height: 85px;
-    }
-  
     .step-content {
-      padding: 45px 90px;
+        padding: 30px;
     }
-  }
-  
-  @media (max-width: 992px) {
-    .partners-section h2 {
-      font-size: 40px;
+    .step h3 {
+        font-size: 50px;
     }
-  
+}
+
+@media screen and (max-width: 768px) {
+    .hero-placeholder .hero-text h1 {
+        font-size: 35px;
+    }
+    .hero-placeholder img {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+    .content .content_heading, 
+    .content .content_heading_2, 
+    .content .content_heading_3, 
+    .content .content_heading_4 {
+        width: 80%;
+        margin-bottom: 20px;
+        position: static;
+    }
+    .faq {
+        width: 100%;
+        top: 0;
+    }
+    .step {
+        margin-left: 0;
+        padding: 20px;
+    }
+    .step-content {
+        padding: 20px;
+        width: 100%;
+    }
+    .step h3 {
+        font-size: 40px;
+    }
+    .what-we-do-section h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-placeholder .hero-text h1 {
+        font-size: 25px;
+        left: 0rem;
+        top: 0.5rem;
+    }
+    .hero-placeholder .hero-text p {
+        font-size: 16px;
+        margin-top: 3rem;
+    }
+    .hero-placeholder img {
+        width: 100%;
+        height: auto;
+        right: 0;
+        top: 2rem;
+    }
+    .content .content_heading, 
+    .content .content_heading_2, 
+    .content .content_heading_3, 
+    .content .content_heading_4 {
+        width: 90%;
+        position: static;
+    }
+    .step {
+        padding: 15px;
+    }
+    .step-content {
+        padding: 15px;
+    }
+    .step h3 {
+        font-size: 30px;
+    }
+    .what-we-do-section h2 {
+        font-size: 25px;
+    }
     .partners-logos img {
-      width: 200px;
+        width: 80%;
+        margin: 20px 10%;
     }
-  
-    .last_section h2 {
-      font-size: 40px;
-    }
-  }
+}
