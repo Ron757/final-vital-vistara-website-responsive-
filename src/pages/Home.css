@@ -387,6 +387,7 @@
     }
     .hero-placeholder img {
         width: 30%;
+        display :flex;
     }
 }
 
