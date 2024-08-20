@@ -17,6 +17,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    flex-direction: row;
 }
 
 .hero-text {
@@ -74,27 +75,7 @@
     box-shadow: 8px 6px 8px 6px rgba(60,64,67,0.3), 8px 6px 8px 6px rgba(60,64,67,0.15);
     border-radius: 25px;
     padding: 20px 4px;
-    margin: 0;
-}
-
-.content_heading {
-    top: -7%;
-    left: 4%;
-}
-
-.content_heading_2 {
-    top: 5%;
-    right: 6%;
-}
-
-.content_heading_3 {
-    top: 37%;
-    left: 4%;
-}
-
-.content_heading_4 {
-    top: 43%;
-    right: 6%;
+    margin: 20px;
 }
 
 .content h2 {
@@ -152,55 +133,31 @@
     justify-content: center;
     gap: 20px;
     overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .step {
     background-color: #fff;
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 20px;
     border-radius: 8px;
-    padding: 45px;
+    padding: 30px;
     text-align: left;
-}
-
-.index_1, .index_2, .index_3 {
-    border: 5px solid #f5f5f5;
-    background-color: #f5f5f5;
-    margin-top: 3.4rem;
-    padding: 1rem;
-    width: 9.6rem;
-    height: 12.5rem;
-    border-radius: 20px;
-}
-
-.dottedline1 {
-    position: relative;
-    top: 3.8rem;
-    left: 60%;
-    transform: scaleY(1.1);
-}
-
-.dottedline2 {
-    position: relative;
-    display: inline-flex;
-    transform: scaleX(-1) scaleY(1.4) translateX(800px) translateY(66px);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
 }
 
 .step-content {
-    width: 74%;
-    padding: 65px 90px;
+    padding: 20px;
     border-radius: 25px;
     box-shadow: 8px 6px 8px 6px rgba(60,64,67,0.3), 8px 6px 8px 6px rgba(60,64,67,0.15);
-}
-
-#step_2 {
-    width: 74%;
-    padding: 85px 90px;
-    transform: translateX(-150px) translateY(-10px);
+    width: 100%;
 }
 
 .step h3 {
-    font-size: 90px;
+    font-size: 70px;
     font-family: "Montserrat", sans-serif;
     font-weight: 560;
     color: #cecece;
@@ -220,11 +177,6 @@
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: bold;
-}
-
-#step_3 {
-    width: 74%;
-    padding: 80px 90px;
 }
 
 .tags {
@@ -258,11 +210,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
 }
 
 .partners-logos img {
-    width: 23rem;
+    width: 20%;
+    margin: 20px;
 }
 
 .last_section {
@@ -297,17 +250,15 @@
 }
 
 .image_desc {
-    width: 43%;
-    top: 3rem;
+    width: 100%;
+    margin: 0 auto;
     position: relative;
-    left: 10%;
 }
 
 .desc {
-    width: 37%;
-    position: relative;
-    top: -13.5rem;
-    left: 50%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .desc p {
@@ -322,28 +273,6 @@
 /* Media Queries for Responsiveness */
 
 @media (max-width: 1200px) {
-    .content-heading-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .content_heading, .content_heading_2, .content_heading_3, .content_heading_4 {
-        width: 80%;
-        margin: 20px 0;
-    }
-
-    .step {
-        flex-direction: column;
-        padding: 30px;
-    }
-
-    .step-content {
-        width: 100%;
-        padding: 50px;
-    }
-}
-
-@media (max-width: 992px) {
     .hero-placeholder {
         flex-direction: column;
         height: auto;
@@ -363,7 +292,7 @@
     }
 
     .partners-logos img {
-        width: 20rem;
+        width: 15rem;
     }
 }
 
@@ -373,19 +302,28 @@
     }
 
     .step-content {
-        padding: 30px;
+        padding: 20px;
     }
 
     .step h3 {
-        font-size: 70px;
+        font-size: 50px;
     }
 
     .partners-logos img {
-        width: 18rem;
+        width: 12rem;
     }
 
     .logos img {
-        width: 6%;
+        width: 5%;
+    }
+
+    .content-heading-container {
+        flex-direction: column;
+    }
+
+    .content_heading, .content_heading_2, .content_heading_3, .content_heading_4 {
+        width: 100%;
+        margin: 15px 0;
     }
 }
 
@@ -413,43 +351,11 @@
     }
 
     .partners-logos img {
-        width: 15rem;
+        width: 10rem;
     }
 
     .logos img {
-        width: 5%;
-        margin: 30px 50px;
-    }
-
-    .content-heading-container {
-        flex-direction: column;
-    }
-
-    .content_heading, .content_heading_2, .content_heading_3, .content_heading_4 {
-        width: 100%;
-        margin: 15px 0;
-    }
-}
-
-@media (max-width: 498px) {
-    .hero-placeholder {
-        padding: 20px;
-    }
-
-    .step h3 {
-        font-size: 50px;
-    }
-
-    .step-content h2 {
-        font-size: 20px;
-    }
-
-    .step-content {
-        padding: 20px;
-    }
-
-    .logos img {
-        width: 4.5%;
-        margin: 20px 40px;
+        width: 4%;
+        margin: 20px;
     }
 }
