@@ -378,80 +378,52 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .hero-placeholder .hero-text {
+        width: 50%;
+    }
+    .hero-placeholder .hero-text h1 {
+        font-size: 40px;
+    }
+    .hero-placeholder img {
+        width: 50%;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .hero-placeholder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+    .hero-placeholder .hero-text {
+        width: 90%;
+        position: static;
+        transform: none;
+    }
     .hero-placeholder .hero-text h1 {
         font-size: 35px;
     }
     .hero-placeholder img {
-        width: 100%;
+        width: 70%;
         height: auto;
         position: static;
-    }
-    .content .content_heading, 
-    .content .content_heading_2, 
-    .content .content_heading_3, 
-    .content .content_heading_4 {
-        width: 80%;
-        margin-bottom: 20px;
-        position: static;
-    }
-    .faq {
-        width: 100%;
-        top: 0;
-    }
-    .step {
-        margin-left: 0;
-        padding: 20px;
-    }
-    .step-content {
-        padding: 20px;
-        width: 100%;
-    }
-    .step h3 {
-        font-size: 40px;
-    }
-    .what-we-do-section h2 {
-        font-size: 30px;
+        margin-top: 20px;
+        transform: none;
     }
 }
 
 @media screen and (max-width: 480px) {
     .hero-placeholder .hero-text h1 {
         font-size: 25px;
-        left: 0rem;
-        top: 0.5rem;
     }
     .hero-placeholder .hero-text p {
         font-size: 16px;
-        margin-top: 3rem;
     }
     .hero-placeholder img {
         width: 100%;
-        height: auto;
-        right: 0;
-        top: 2rem;
-    }
-    .content .content_heading, 
-    .content .content_heading_2, 
-    .content .content_heading_3, 
-    .content .content_heading_4 {
-        width: 90%;
-        position: static;
-    }
-    .step {
-        padding: 15px;
-    }
-    .step-content {
-        padding: 15px;
-    }
-    .step h3 {
-        font-size: 30px;
-    }
-    .what-we-do-section h2 {
-        font-size: 25px;
-    }
-    .partners-logos img {
-        width: 80%;
-        margin: 20px 10%;
+        margin-top: 15px;
     }
 }
