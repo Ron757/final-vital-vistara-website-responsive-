@@ -1,3 +1,4 @@
+/* Base Styles (for larger screens) */
 .collaborations-page {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -14,7 +15,6 @@
     height: 510px;
     margin-bottom: 20px;
     display: grid;
-    position: relative;
 }
 
 .hero-placeholder .hero-text {
@@ -67,51 +67,35 @@
     top: 0.2rem;
 }
 
-.content .content_heading {
-    width: 30%;
-    border: 3px solid white;
-    box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
-    border-radius: 25px;
-    display: flex;
-    z-index: 0;
-    padding: 20px 1px;
-    position: absolute;
-    top: -7%;
-    left: 4%;
-}
-
-.content .content_heading_2 {
-    width: 30%;
-    border: 3px solid white;
-    box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
-    border-radius: 25px;
-    z-index: 0;
-    padding: 20px 4px;
-    position: absolute;
-    top: 5%;
-    right: 6%;
-}
-
-.content .content_heading_3 {
-    width: 30%;
-    border: 3px solid white;
-    box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
-    border-radius: 25px;
-    z-index: 0;
-    padding: 20px 4px;
-    position: absolute;
-    top: 37%;
-    left: 4%;
-}
-
+.content .content_heading,
+.content .content_heading_2,
+.content .content_heading_3,
 .content .content_heading_4 {
     width: 30%;
     border: 3px solid white;
     box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
     border-radius: 25px;
-    z-index: 0;
-    padding: 20px 5px;
+    padding: 20px 4px;
     position: absolute;
+    z-index: 0;
+}
+
+.content .content_heading {
+    top: -7%;
+    left: 4%;
+}
+
+.content .content_heading_2 {
+    top: 5%;
+    right: 6%;
+}
+
+.content .content_heading_3 {
+    top: 37%;
+    left: 4%;
+}
+
+.content .content_heading_4 {
     top: 43%;
     right: 6%;
 }
@@ -164,9 +148,8 @@
 }
 
 .steps {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
+    justify-content: center;
     gap: 20px;
     overflow: hidden;
 }
@@ -181,7 +164,9 @@
     text-align: left;
 }
 
-.index_1, .index_2, .index_3 {
+.index_1,
+.index_2,
+.index_3 {
     border: 5px solid #f5f5f5;
     background-color: #f5f5f5;
     margin-top: 3.4rem;
@@ -309,86 +294,203 @@
 }
 
 .company_desc h4 {
-    margin-top: 2.5rem;
-    font-size: 24px;
+    margin-top: -5rem;
+    margin-left: 43%;
+    width: 20%;
+    margin-bottom: 6rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 2px 3px 2px 3px rgba(60, 64, 67, 0.3), 2px 3px 2px 3px rgba(60, 64, 67, 0.15);
 }
 
-.company_desc {
-    margin-bottom: 3rem;
+.image_desc {
+    width: 43%;
+    top: 3rem;
+    position: relative;
+    left: 10%;
+    z-index: 0;
 }
 
-.tags_container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+.desc {
+    width: 37%;
+    position: relative;
+    top: -13.5rem;
+    left: 50%;
+    z-index: 1;
 }
 
-.tags_container .tag {
-    padding: 20px 40px;
-    border-radius: 8px;
-    background-color: #007bff;
-    color: white;
-    font-size: 22px;
-    cursor: pointer;
+.desc p {
+    font-size: 16.4px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: initial;
+    margin: 6px 0;
+    color: black;
 }
 
-@media screen and (max-width: 768px) {
-    .hero-placeholder img {
-        width: 80%;
+/* Responsive CSS */
+
+/* Tablets (768px to 992px) */
+@media (max-width: 992px) {
+    .hero-placeholder {
         height: auto;
-        position: static;
-        margin: 0 auto;
         display: block;
     }
-
+    .hero-placeholder img {
+        width: 50%;
+        height: auto;
+        position: relative;
+        top: 20px;
+        right: 0;
+        margin: 0 auto;
+    }
     .hero-placeholder .hero-text {
-        position: static;
-        width: 100%;
-        text-align: center;
+        width: 90%;
+        left: 5%;
     }
-
-    .hero-placeholder .hero-text h1 {
-        font-size: 40px;
+    .step-content {
+        padding: 45px 30px;
+        width: 95%;
     }
-
-    .hero-placeholder .hero-text p {
-        font-size: 18px;
+    #step_2, #step_3 {
+        width: 95%;
+        padding: 50px 30px;
     }
-
     .content .content_heading,
     .content .content_heading_2,
     .content .content_heading_3,
     .content .content_heading_4 {
-        width: 80%;
-        position: static;
-        margin: 20px auto;
+        width: 45%;
     }
-
-    .steps {
-        flex-direction: column;
-        align-items: center;
+    .faq {
+        width: 70%;
     }
+    .partners-logos img {
+        width: 18rem;
+    }
+}
 
+/* Small tablets and large phones (576px to 768px) */
+@media (max-width: 768px) {
+    .hero-placeholder img {
+        display: none;
+    }
+    .hero-placeholder .hero-text {
+        width: 90%;
+        left: 5%;
+    }
     .step {
         flex-direction: column;
-        margin: 0;
-        text-align: center;
-        padding: 20px;
+        align-items: center;
+        margin-left: 0;
     }
-
+    .dottedline1,
+    .dottedline2 {
+        display: none;
+    }
     .step-content {
+        padding: 30px 20px;
         width: 100%;
-        padding: 20px;
-        box-shadow: none;
     }
-
+    #step_2, #step_3 {
+        width: 100%;
+        padding: 35px 20px;
+    }
+    .content .content_heading,
+    .content .content_heading_2,
+    .content .content_heading_3,
+    .content .content_heading_4 {
+        width: 95%;
+        position: relative;
+        margin-bottom: 20px;
+        left: auto;
+        right: auto;
+    }
+    .teams-section {
+        flex-direction: column;
+    }
+    .faq {
+        width: 90%;
+    }
     .partners-logos img {
-        width: 80%;
-        margin: 20px auto;
+        width: 14rem;
     }
+    .company_desc h4 {
+        width: 60%;
+        margin-left: 20%;
+    }
+}
 
+/* Phones (up to 576px) */
+@media (max-width: 576px) {
+    .hero-placeholder .hero-text h1 {
+        font-size: 40px;
+    }
+    .hero-placeholder .hero-text p {
+        font-size: 18px;
+    }
+    .hero-placeholder .btn {
+        font-size: 1rem;
+    }
+    .step-content h2 {
+        font-size: 28px;
+    }
+    .step-content p {
+        font-size: 16px;
+    }
     .tags span {
         font-size: 16px;
+        padding: 8px 20px;
+    }
+    .teams-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .team-card {
+        width: 90%;
+    }
+    .company_desc h4 {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .partners-logos img {
+        width: 10rem;
+    }
+}
+
+/* Very small devices (up to 400px) */
+@media (max-width: 400px) {
+    .hero-placeholder .hero-text h1 {
+        font-size: 32px;
+    }
+    .hero-placeholder .hero-text p {
+        font-size: 16px;
+    }
+    .step-content h2 {
+        font-size: 24px;
+    }
+    .step-content p {
+        font-size: 14px;
+    }
+    .tags span {
+        font-size: 14px;
+        padding: 6px 15px;
+    }
+    .faq {
+        width: 100%;
+    }
+    .partners-logos img {
+        width: 8rem;
+    }
+    .team-card {
+        width: 95%;
+    }
+    .company_desc h4 {
+        width: 90%;
+        margin-left: 5%;
     }
 }
