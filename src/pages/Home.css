@@ -13,26 +13,24 @@
     background-color: white;
     height: 510px;
     margin-bottom: 20px;
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
-.hero-placeholder .hero-text {
-    position: absolute;
-    left: 10%;
+.hero-text {
     width: 39%;
 }
 
-.hero-placeholder .hero-text h1 {
+.hero-text h1 {
     font-size: 60px;
     font-family: auto;
-    position: absolute;
     font-weight: 250;
-    left: 0rem;
-    top: 1.3rem;
     letter-spacing: 0.5rem;
 }
 
-.hero-placeholder .hero-text p {
+.hero-text p {
     margin-top: 6.5rem;
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
@@ -40,24 +38,21 @@
     padding: 3px 2px;
 }
 
-.hero-placeholder .btn {
+.btn {
     margin-top: 2.5rem;
     font-size: 1.2rem;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    box-shadow: 1px 1px 1px 1px rgba(60, 64, 67, 0.3);
+    box-shadow: 1px 1px 1px 1px rgba(60,64,67,0.3);
 }
 
-.hero-placeholder .btn:hover {
-    box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
+.btn:hover {
+    box-shadow: 8px 6px 8px 6px rgba(60,64,67,0.3), 8px 6px 8px 6px rgba(60,64,67,0.15);
 }
 
 .hero-placeholder img {
     width: 40%;
     height: 467px;
-    position: absolute;
-    right: 4%;
-    top: 8rem;
 }
 
 .content {
@@ -66,51 +61,38 @@
     top: 0.2rem;
 }
 
-.content .content_heading {
+.content-heading-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.content_heading, .content_heading_2, .content_heading_3, .content_heading_4 {
     width: 30%;
     border: 3px solid white;
-    box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
+    box-shadow: 8px 6px 8px 6px rgba(60,64,67,0.3), 8px 6px 8px 6px rgba(60,64,67,0.15);
     border-radius: 25px;
-    display: flex;
-    z-index: 0;
-    padding: 20px 1px;
-    position: absolute;
+    padding: 20px 4px;
+    margin: 0;
+}
+
+.content_heading {
     top: -7%;
     left: 4%;
 }
 
-.content .content_heading_2 {
-    width: 30%;
-    border: 3px solid white;
-    box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
-    border-radius: 25px;
-    z-index: 0;
-    padding: 20px 4px;
-    position: absolute;
+.content_heading_2 {
     top: 5%;
     right: 6%;
 }
 
-.content .content_heading_3 {
-    width: 30%;
-    border: 3px solid white;
-    box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
-    border-radius: 25px;
-    z-index: 0;
-    padding: 20px 4px;
-    position: absolute;
+.content_heading_3 {
     top: 37%;
     left: 4%;
 }
 
-.content .content_heading_4 {
-    width: 30%;
-    border: 3px solid white;
-    box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
-    border-radius: 25px;
-    z-index: 0;
-    padding: 20px 5px;
-    position: absolute;
+.content_heading_4 {
     top: 43%;
     right: 6%;
 }
@@ -122,8 +104,6 @@
 }
 
 .faq {
-    position: relative;
-    top: -6rem;
     width: 45%;
     margin: 5px 10px;
     z-index: 2;
@@ -136,14 +116,19 @@
     z-index: 3;
 }
 
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
 .logos img {
     width: 7.3%;
     margin: 50px 75px;
 }
 
 .what-we-do-section {
-    position: relative;
-    top: 0.2rem;
     padding: 10px 20px;
     text-align: center;
 }
@@ -163,7 +148,7 @@
 }
 
 .steps {
-    display: block;
+    display: flex;
     justify-content: center;
     gap: 20px;
     overflow: hidden;
@@ -173,7 +158,6 @@
     background-color: #fff;
     display: flex;
     gap: 30px;
-    margin-left: 8rem;
     border-radius: 8px;
     padding: 45px;
     text-align: left;
@@ -187,18 +171,6 @@
     width: 9.6rem;
     height: 12.5rem;
     border-radius: 20px;
-}
-
-.index_2 {
-    left: 79.3%;
-    top: -0.6rem;
-    position: relative;
-}
-
-.index_3 {
-    left: -0.6%;
-    position: relative;
-    top: -0.6rem;
 }
 
 .dottedline1 {
@@ -218,7 +190,7 @@
     width: 74%;
     padding: 65px 90px;
     border-radius: 25px;
-    box-shadow: 8px 6px 8px 6px rgba(60, 64, 67, 0.3), 8px 6px 8px 6px rgba(60, 64, 67, 0.15);
+    box-shadow: 8px 6px 8px 6px rgba(60,64,67,0.3), 8px 6px 8px 6px rgba(60,64,67,0.15);
 }
 
 #step_2 {
@@ -271,8 +243,6 @@
 }
 
 .partners-section {
-    position: relative;
-    top: 2rem;
     text-align: center;
     padding: 40px 20px;
 }
@@ -284,8 +254,14 @@
     font-weight: 650;
 }
 
+.partners-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
 .partners-logos img {
-    margin: 40px 80px;
     width: 23rem;
 }
 
@@ -313,118 +289,83 @@
     margin-bottom: 6rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 20px;
-    padding: 30px;
-    border-radius: 50px;
-    background-color: #007BFF;
+    font-size: 28px;
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 2px 3px 2px 3px rgba(60,64,67,0.3), 2px 3px 2px 3px rgba(60,64,67,0.15);
 }
 
-.company_desc .hero-text {
-    position: absolute;
-    left: 0%;
-    width: 29%;
+.image_desc {
+    width: 43%;
+    top: 3rem;
+    position: relative;
+    left: 10%;
 }
 
-.company_desc .hero-text h1 {
-    font-size: 50px;
-    font-family: auto;
-    position: absolute;
-    font-weight: 450;
-    left: 3rem;
-    top: 1.8rem;
+.desc {
+    width: 37%;
+    position: relative;
+    top: -13.5rem;
+    left: 50%;
 }
 
-.company_desc .hero-text p {
-    margin-top: 10rem;
-    font-size: 20px;
+.desc p {
+    font-size: 16.4px;
     font-family: "Montserrat", sans-serif;
-    font-weight: 650;
-    padding: 3px 2px;
+    font-weight: 500;
+    text-align: initial;
+    margin: 6px 0;
+    color: black;
 }
 
-@media screen and (max-width: 1024px) {
-    .hero-placeholder .hero-text h1 {
-        font-size: 30px;
-        left: 0rem;
-        top: 1rem;
-    }
-    .hero-placeholder .hero-text p {
-        font-size: 18px;
-        margin-top: 5rem;
-    }
-    .hero-placeholder img {
-        width: 60%;
-        height: auto;
-        right: 2%;
-        top: 5rem;
-    }
-    .content .content_heading, 
-    .content .content_heading_2, 
-    .content .content_heading_3, 
-    .content .content_heading_4 {
-        width: 40%;
-        top: -5%;
-    }
-    .step {
-        flex-direction: column;
-        margin-left: 0;
-        padding: 20px;
-    }
-    .step-content {
-        padding: 30px;
-    }
-    .step h3 {
-        font-size: 50px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .hero-placeholder .hero-text {
-        width: 25%;
-    }
-    .hero-placeholder .hero-text h1 {
-        font-size: 40px;
-    }
-    .hero-placeholder img {
-        width: 30%;
-        display :flex;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .hero-placeholder {
-        display: flex;
+@media (max-width: 768px) {
+    .content-heading-container {
         flex-direction: column;
         align-items: center;
-        text-align: center;
-        height: auto;
     }
-    .hero-placeholder .hero-text {
-        width: 90%;
+
+    .content_heading, .content_heading_2, .content_heading_3, .content_heading_4 {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
         position: static;
-        transform: none;
+        top: initial;
+        left: initial;
+        right: initial;
     }
-    .hero-placeholder .hero-text h1 {
-        font-size: 35px;
+
+    .logos img {
+        width: 7.3%;
+        margin: 50px 75px;
     }
-    .hero-placeholder img {
-        width: 70%;
-        height: auto;
-        position: static;
-        margin-top: 20px;
-        transform: none;
+
+    .step {
+        flex-direction: column;
+        gap: 20px;
+        width: 80%;
+    }
+
+    .index_1, .index_2, .index_3 {
+        width: 72px;
+        height: 85px;
+    }
+
+    .step-content {
+        padding: 45px 90px;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .hero-placeholder .hero-text h1 {
-        font-size: 25px;
+@media (max-width: 992px) {
+    .partners-section h2 {
+        font-size: 40px;
     }
-    .hero-placeholder .hero-text p {
-        font-size: 16px;
+
+    .partners-logos img {
+        width: 200px;
     }
-    .hero-placeholder img {
-        width: 100%;
-        margin-top: 15px;
+
+    .last_section h2 {
+        font-size: 40px;
     }
 }
