@@ -380,7 +380,7 @@
 
 @media screen and (max-width: 1024px) {
     .hero-placeholder .hero-text {
-        width: 50%;
+        width: 25%;
     }
     .hero-placeholder .hero-text h1 {
         font-size: 40px;
