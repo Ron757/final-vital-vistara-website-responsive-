@@ -182,9 +182,9 @@ body{
      margin-right:3.5rem; 
   }
   .founder .icon a{
-   /* display: flex;
+    display: flex;
     gap: 20px;
-    margin-left: 40px; */
+     margin-left: 40px;
   }
   .icon a img{
      margin-right: -28%; 
